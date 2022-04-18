@@ -1,0 +1,390 @@
+/*lembrando que essas alterações no css é para alterar o comportamento do html e não a estrutura desse html*/
+
+body{
+	font-family: 'Montserrat', sans-serif; /*aqui pegamos o css do google fonts para adicionar a pág.*/
+}
+
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa{ /*essa classe foi criada para limitar a caixa de fundo do nosso cabeçalho
+	position: relative*/
+	position: relative; /*irá subir o bloco*/
+	width: 940px; /*largura fixa de 940pixels padrão.*/
+	margin: 0 auto ; /*irá calcular 0 para cima e baixo e irá calcular o restante do cabeçalho que sobra para alem dos 940px e dividir por dois e criar a margem*/
+}
+
+nav{
+	position: absolute; /*posição absoluta altera o ponto inicial, ele será qualquer ponto da página. No ponto static permanece o ponto inicial a esquerda e
+	 o relativo altera dentro do próprio bloco, mas sempre a partir da esquerda*/ 
+	top: 110px; /*para saber a posição se baseie nos pixels da imagem ao lado que no caso tem 250px, queremos a lista na metade, logo 125px*/
+	right: 0px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px; /* margem é o espaço primeiro para topo, direita, baixo, esquerda*/
+}
+
+nav a {
+	text-transform: uppercase; /* estamos pedindo para o css transformar as letras dos nomes dos links navegaveis desta lista em maiusculo - uppercase / maiusculo */
+	color: #000000; /*irá mudar a cor do texto*/
+	font-weight: bold; /*irá mudar o peso da fonte para negrito*/
+	font-size: 22px; /* irá mudar o tamanho da fonte*/
+	text-decoration: none; /*irá tirar o sublinhado do texto*/
+}
+
+nav a:hover { /*o hover é uma reação que o o link navegavel irá ter após o mouse passar por cima hover/flutuar*/
+	color: #C78C19; /*aqui irá alterar a cor quando o mouse passar por cima no caso da navegacao dos itens que estão da tag anchor*/
+	text-decoration: underline; /*irá colocar uma linha abaixo do item navegavel da ancora sempre que o cursor passar por cima desses itens*/
+}
+
+
+.produtos2{
+	width: 940px; /*largura fixa de 940pixels padrão.*/
+	margin: 0 auto ; /*espaçamento lateral de 0 cima e baixo e automatico para os lados*/
+	padding: 50px 0;
+}
+
+.produtos2 li{
+	display: inline-block; /*irá colocar a lista um ao lado do outro*/
+	text-align: center;
+	width: 30%; /*quermos que cada item ocupe 30% da página*/
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000; /*aqui criamos uma borda para o item, sendo o primeiro a expessura da borda, o tipo da borda e a cor ao inves de fazer um a um 
+	(border width, border style e border color)*/
+	border-radius: 10px; /*irá arrendodar todos os cantos, se quiser arredondar apenas um lado border radius top ou bottom ou left ou right*/
+}
+
+
+.produtos2 li:hover { /*o hover é uma reação que o o link navegavel irá ter após o mouse passar por cima hover/flutuar*/
+	border-color: #C78C19;
+}
+
+.produtos2 li:active { /*ira mudar a cor do elemento quando clicado, nesse caso a borda dos itens, esse comportamento é para quando clicamos no produto ou seja ele
+ está ativo*/
+	border-color: #088C19;
+}
+
+.produtos2 li:hover h2 { /*aqui ele irá alterar o h2 quando o cursor estiver em cima do item */
+	font-size: 34px;
+	color: red; /*quando quiser alterar a cor do texto use somente color:; */
+}
+
+.produtos2 h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.descricao{
+	font-size: 18px;
+}
+
+.preco{
+	font-weight: bold;
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg"); /*pega uma imagem e coloca ela de fundo*/
+	padding-top: 40px; /*irá colocar um espaçamento interno de 40 pixels para cima e baixo e zero para os lados*/
+	padding-bottom: 40px;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0; /*deixa uma margem externa de 20 pixels para cima*/
+
+}
+
+
+main{
+	/*width: 940px; /*largura será de 940 pixels padronizando para maioria das telas
+	margin: 0 auto; /*colocará uma margem de 0 cima e baixo e expassará automaticamente cada input de forma correta
+	decidimos tirar para não ficar centralizado o background, então vamos colocar no principal e mapa  */
+}
+
+form{
+	margin: 40px 0; /*pra cima e baixo 40pixels e para os lados zero*/
+}
+
+form label, form legend{ /* a virgula faz com que você utilize as mesmas mudanças para mais tags*/
+	display: block; /*irá quebrar, passar para linha de baixo após o fim do seu tamanho*/
+	font-size: 20px;
+	margin-bottom: 10px;
+
+}
+
+.input-padrao{
+	display: block; /*irá quebrar, passar para linha de baixo após o fim do seu tamanho*/
+	margin: 0 0 20px;
+	padding: 10px 25px; /*10 pixels para cima e baixo e 25 para os lados*/
+	width: 50%;
+}
+
+.checkbox{
+	margin: 20px 0;
+}
+
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all; /*irá fazer a transição do background no tempo determinado*/
+	cursor: pointer; /*irá mudar o cursor de seta para mão quando o cursor estiver por cima do submit*/
+}
+
+.enviar:hover{
+	background: darkorange;
+	transform: scale(1.2); /*aumenta o tamanho do item quando o cursor passar por cima dele*/
+	/* transform: rotate(70deg); /*rotaciona o item em quantos graus voce quiser*/
+}
+
+table{
+	margin: 20px 0 40px; /*cria uma margem externa na tabela*/
+}
+
+thead{
+	background: #555555; /*deixa uma cor de fundo no cabeçalho*/
+	color: white; /*modifica a cor do titulo do cabeçalho */
+	font-weight: bold; /*deixa a fonte do titulo do cabeçalho em negrito*/
+}
+
+td, th{
+	border: 1px solid #000000; /*fará uma borda de 1pixel na tabela das celulas e na th e deixaram elas em enfase solida*/
+	padding: 8px 15px;
+}
+
+/*css abaixo da página inicial*/
+.banner{
+	width: 100%;
+}
+
+.titulo-home{
+	text-align: center;
+	font-size: 2em; /*se o tamanho base for 16pixel ela terá o dobro ou seja 32pixel*/
+	margin: 0 0 1em;
+	clear: left; /*limpara o float deixando ele somente onde está, não afetará daqui pra baixo*/
+}
+
+.principal{
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+.principal p{
+	margin: 0 0 1em;
+}
+
+.principal strong{
+	font-weight: bold;
+}
+
+.principal em{
+	font-style: italic;
+}
+
+.utensilios{
+	width: 120px;
+	float: left; /*irá fazer o conteudo flutuar mas deixara uma sombra e todos os elementos irão rodear ou serão afetados por ele abaixo*/
+	margin: 0 20px 20px 0
+}
+
+.mapa{
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE,#888888) /*linear-gradiente ou radial-gradiente fará um degradê no fundo pode acrecsentar graus, porcentagem...*/
+
+}
+
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.mapa iframe{
+	width: 100%;
+}
+
+.beneficios{
+	padding: 3em 0;
+	background:#888888;
+
+}
+
+.conteudo-beneficios{
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios{
+	width: 40%;
+	display: inline-block; /*não esqueça de deixar ao lado da <ul> para que ele não considere o espaço vazio*/
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5; /*dara um espaçamento de meia fonte dos caracteres escritos de um item ao outro*/
+}
+
+.itens:before {   /*essa função de pseudo-elementos criara um conteudo antes do item e não será selecionável*/
+	content: "★";
+}
+
+.itens em{
+	font-weight: bold;
+}
+
+.imagembeneficios{
+	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagembeneficios:hover {
+    opacity: 0.7;
+}
+
+.video{
+	margin: 2em auto; /*ajudará a centralizar o video*/
+	width: 560px;
+}
+
+@media screen and (max-width: 820px){
+	.caixa, .principal, .produtos2, .produtos2 li, .conteudo-beneficios,.mapa-conteudo, .video{ /*mudar a largura do video no iframe html*/
+		width: auto;
+	}
+
+	.input-padrao{
+		width: 100%;
+	}
+	
+	nav, h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+	}
+
+	.produtos2 li{
+		display: block;
+	}
+}
+
+
+
+
+
+/*com seletores avançados podemos mudar por exemplo o background de um parágrafo específico ex:
+main > p {
+	background: red;
+}
+ esse parágrafo especifico ou seja o primeiro paragrafo que vem a seguir de main, o filho direto dele
+
+ se quisermos escolher o primeiro irmao de um elemento ex:
+ img + p{
+	background: red;
+ }esse parágrafo especifico ou seja o primeiro paragrafo que vem a seguir de img, o primeiro irmão direto dele
+
+ se quisermos escolher todos os paragrafos filhos de img fazemos assim ex
+ img ~ p {
+	background: red;
+ } ele deixará todos os parágrafos com a cor de fundo vermelha pertencentes a essa img
+
+ se quisermos usar o background para excluir algo e impactar o visual só de outros elementos ex
+ temos um id #missão
+ então 
+
+ .principal p:not(#missao);{
+	background: red;
+ } ele deixará todos os parágrafos vermelho exceto o parágrafo que contem o id #missao
+
+ podemos usar a ferramenta calc(2px * 320px) para obter uma conta e ajustar o tamanho da pág ou da imagem
+
+ Opacidade em css é para ajustar a luz no elemento, ou seja imagine que vamos melhorar a sombra que vai de 
+ zero 0 que é com opacidade total ou seja visualização muito baixa até um no exemplo abaixo temos:
+ .imagem-beneficios{
+	width: 60%;
+	opacity: 0.3; 
+	transition: 400ms;
+}
+
+.imagem-beneficios:hover{
+	opacity:1;
+
+}
+
+isso fará a visualização da imagem estar com 70% de luz e 30% de sombra (opacity: 0.3) e quando passarmos o mouse
+(hover) ela ficará nítida mas irá demorar 400 milisegundos para voltar ao estágio opaco (transition)
+
+é possível usar opacidade em cores exemplo:
+.titulo-principal{
+	color:rgb(0,0,0); preto para deixar opaco ficará com a camada alpha ou seja
+}
+.titulo-principal{
+	color:rgba(0,0,0,0.3); dessa forma todo o conteudo principal da classe ficará com um preto 30% opaco
+	meio cinza
+
+Fazer sombra em um elemento é fácil também ex.
+.imagem-beneficio{
+	box-shadow: 10px 10px 5px 40px #000000, -10px - 10px yellow; ou seja o primeiro 10px terá no eixo X da
+	 imagem uma sombra preta
+	e o no eixo Y segundo 10px tbm terá essa sombra em volta da imagem, mas por ter um terceiro elemento o 5px
+	esse será o blur - borrão, ou seja ficará com uma sombra menos geométrica mais suave quase um degradê,
+	no quarto elemento 40px essa sombra irá expandir ou seja aumentar em volta da imagem.
+	Após a virgula ele criará uma sombra amarela no lado oposto por estar negativo em X e Y amarelo.
+
+	se quiser adicionar uma sombra interna no conteúdo  
+	box-shadow: inset 0 0 30px #FF0000; ele expassará 30px com essa cor
+
+	para fazer uma sombra no texto será ex:
+	.titulo-principal
+	text-shadow: 2px 2px #FF0000; e ele fará uma sombra no texto dessa classe
+}
+
+usando a página para uso no celular
+para verificar se a pág. criada está adptada vá a ferramenta do desenvolvedor f12 e verifique no simbolo
+de celular para verificar como está a visualização neste dispositivo. vamos entender quantos pixels nossa
+tela programada tem, pq hoje nossa tela se adapta ao tamanho que a tela tenha, dpi densidade de pixel por
+polegada. quando falamos que nosso site tem uma tela de 940px precisamos descobrir quanto o usuário tem de tela
+geralmente em um celular temos 320px até 480px por polegada.
+Para descobrir quanto o usuário tem usamos o 
+<meta name="viewport" content="width=device-width"> ou seja a janela de exibição tem um conteudo de largura
+largura do dispositivo. isso no html5
+
+o media queries pergunta ao navegador qual o tamnho daquela tela
+@media screen and (max-width: 480px){ 
+	body{
+		background: red;
+	}
+} ou seja queremos entregar a tela para uma largura máxima de 480px um background vermelho em todo o body,para
+verificar se vai funcionar a adptação.
+
+
+feito isso e verificando que deu certo vamos agora passar toda a programação para ser vista em qualquer tipo
+de tela de celular.
+Esse método chamdo de responsivo fará a programação no css para que ele fique bem em qualuer tela de celular.
+porém para não perder tempo com isso o ideal é usar medidas proporcionais em tudo, para evitar criar layouts
+responsivos. ou seja criar layouts fluídos.
+
+
