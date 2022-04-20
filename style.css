@@ -56,7 +56,7 @@ nav a:hover { /*o hover é uma reação que o o link navegavel irá ter após o 
 	margin: 0 1.5%;
 	padding: 30px 20px;
 	box-sizing: border-box;
-	border: 2px solid #000000; /*aqui criamos uma borda para o item, sendo o primeiro a expessura da borda, o tipo da borda e a cor ao inves de fazer um a um 
+	border: 2px solid #000001; /*aqui criamos uma borda para o item, sendo o primeiro a expessura da borda, o tipo da borda e a cor ao inves de fazer um a um 
 	(border width, border style e border color)*/
 	border-radius: 10px; /*irá arrendodar todos os cantos, se quiser arredondar apenas um lado border radius top ou bottom ou left ou right*/
 }
