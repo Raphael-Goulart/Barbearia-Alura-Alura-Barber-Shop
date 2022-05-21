@@ -1,79 +1,77 @@
-<!DOCTYPE html> <!-- versão html que estamos trabalhando -->
-<html lang="pt-br"> <!-- lingua / language -->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Barbearia Alura</title>
 
-	<head> <!-- a cabeça é onde está o que a página não irá exibir, mas está sendo executado por trás -->
-		<meta charset =”UTF- 8”> <!-- caracteres das linguas ocidentais -->
-		<meta name="viewport" content="width=device-width">
-		<title>Barbearia | Alura</title> <!-- título que aparece na aba do navegador -->
-		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="stylee.css"> <!-- folha de estilo e link de referencia para programar  com css--> 
-		<link rel="preconnect" href="https://fonts.googleapis.com"> <!-- link da fonte do google fonts-->
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	</head> 
-	<body> <!-- o que iremos exibir na página-->
-		<header> <!-- cabeçalho -->
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
 			<div class="caixa">
-				<h1><img src="logo.png"></h1> <!-- o h irá ser o principal da página ele irá ficar com a fonte diferenciada -->
+				<h1><img src="/img/logo.png"></h1>
+
 				<nav>
 					<ul>
-						<li><a href="index2.html">Home</a></li>
-						<li><a href="produtos2.html">Produtos</a></li>
-						<li><a href="contato2.html">Contato</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 
-		<img class="banner" src="banner.jpg"> <!-- colocar imagem na página-->
+		<img class="banner" src="/img/banner.jpg">
 
 		<main>
-			<section class="principal"> <!-- defino uma divisão da página -->
-				<h2 class="titulo-home">Sobre a Barbearia Alura</h2> <!-- segundo título pricipal da página-->
-				<img src="utensilios.jpg" class="utensilios" alt="Utensilios de um barbeiro">
+			<section class="principal">
+				<h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
 
-				<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p> <!-- parágrafo-->
+				<img class="utensilios" src="/img/utensilios.jpg" alt="Utensilios de um barbeiro.">
+		 
+				<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
 
-				<p id="missao"><em>Nossa missão é:<strong> "Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p> <!-- itálico e negrito -->
+				<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
 
-
-				<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e 	satisfação dos nossos clientes.</p>
-
+				<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
 			</section>
 
 			<section class="mapa">
-				<h3 class="titulo-home">Estamos aqui<span>&#128071;</span></h3>
-				<p>Nosso estabelecimento está localizado no coração da cidade</p>
+				<h3 class="titulo-principal">Nosso estabelecimento</h3>
+				<p>Nosso estabelecimento está localizado no coração da cidade.</p>
+
 				<div class="mapa-conteudo">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d58513.830863332405!2d-46.62718313662303!3d-23.564333403130913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x94ce59541c6c79c3%3A0x36b90a85f0f8cb33!2sGrupo%20Alura%20-%20Av.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100%2C%20Brasil!3m2!1d-23.5647731!2d-46.6518701!5e0!3m2!1spt-PT!2spt!4v1648648771118!5m2!1spt-PT!2spt" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 				</div>
 			</section>
 
 			<section class="beneficios">
-				<h3 class="titulo-home">Benefícios</h3>
+				<h3 class="titulo-principal">Benefícios</h3>
 
 				<div class="conteudo-beneficios">
-					<ul class="lista-beneficios"> <!-- lista não ordenada / undernored list -->
-						<li class="itens"><em>Atendimento aos Clientes</em></li> <!-- itens da lista / list itens-->
+					<ul class="lista-beneficios">
+						<li class="itens">Atendimento aos Clientes</li>
 						<li class="itens">Espaço diferenciado</li>
 						<li class="itens">Localização</li>
 						<li class="itens">Profissionais Qualificados</li>
 						<li class="itens">Pontualidade</li>
 						<li class="itens">Limpeza</li>
-					</ul><img src="beneficios.jpg" class="imagembeneficios">
+					</ul><img src="/img/beneficios.jpg" class="imagem-beneficios">
 				</div>
-				
+
 				<div class="video">
-					<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</section>
 		</main>
 
 		<footer>
-			<img src="logo-branco.png">
-			<p class="copyright">&copy; Copyright Barbearia Alura - 2022</p> <!-- este &copy; é um unicode para copyright -->
+			<img src="/img/logo-branco.png">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
 		</footer>
-
 	</body>
 </html>
-
 
