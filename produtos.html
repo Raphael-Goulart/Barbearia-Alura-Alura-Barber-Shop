@@ -1,51 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset =”UTF- 8”>
-	<meta name="viewport" content="width=device-width">
-	<title>Produtos - Barbearia Alura</title>
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Produtos - Barbearia Alura</title>
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-	<header> <!-- cabeçalho -->
-		<div class="caixa"> <!-- criamos uma divisão para podermos limitar o nosso cabeçalho a 940px,    -->
-			<h1><img src="logo.png"></h1><!-- o h1 é o principal da página -->
-		
-			<nav><!-- esta é a tag de navegação para indicar links navegaveis, no css utilze ela para mudar a lista para inline, sempre que utilizarmos navegacao utilizamos essa tag e não uma classe -->
-				<ul>
-					<li><a href="index2.html">Home</a></li> <!-- a tag <a href=""> irá criar um link navegavel para esse texto da lista, este <a> é de anchor / âncora -->
-					<li><a href="produtos2.html">Produtos</a></li>
-					<li><a href="contato2.html">Contatos</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<main> <!-- essa tag representa o principal conteudo da pág. -->
-		<ul class="produtos2">
-			<li>
-				<h2>Cabelo</h2><!-- temos o parágrafo junto com h2, pois dentro do item cabelo é o destaque e os outros são parágrafos -->
-				<img src="cabelo.jpg"> 
-				<p class="descricao">Na tesoura ou na máquina, como o cliente preferir</p>
-				<p class="preco">R$ 25,00</p>
-			</li>
-			<li>
-				<h2>Barba</h2>
-				<img src="barba.jpg"> 
-				<p class="descricao">Corte e desenho profissional de barba</p>
-				<p class="preco">R$ 18,00</p>
-			</li>
-			<li>
-				<h2>Cabelo + Barba</h2>
-				<img src="cabelo+barba.jpg">
-				<p class="descricao">Pacote completo de cabelo e barba</p>
-				<p class="preco">R$ 35,00</p>
-			</li>
-		</ul>
-	</main>
-	<footer>
-		<img src="logo-branco.png">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="/img/logo.png"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<ul class="produtos">
+				<li>
+					<h2>Cabelo</h2>
+					<img src="/img/cabelo.jpg">
+					<p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+					<p class="produto-preco">R$ 25,00</p>
+				</li>
+				<li>
+					<h2>Barba</h2>
+					<img src="/img/barba.jpg">
+					<p class="produto-descricao">Corte e desenho profissional de barba</p>
+					<p class="produto-preco">R$ 18,00</p>
+				</li>
+				<li>
+					<h2>Cabelo + Barba</h2>
+					<img src="/img/cabelo+barba.jpg">
+					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
+					<p class="produto-preco">R$ 35,00</p>
+				</li>
+			</ul>
+		</main>
+
+		<footer>
+		<img src="/img/logo-branco.png">
 		<p class="copyright">&copy; Copyright Barbearia Alura - 2022</p> <!-- este &copy; é um unicode para copyright -->
 	</footer>
-</body>
+	</body>
 </html>
