@@ -1,4 +1,4 @@
-><h1>Landing-Page | RockOn</h1>
+><h1>Barber Shop | Alura</h1>
 >
 >![logo](https://user-images.githubusercontent.com/102624691/186651831-6f6914e7-210f-4cd3-8bbe-1a2cfa934a82.png)
 
@@ -10,7 +10,7 @@
 
 
 ><h2>My Project</h2>
->Link of my project: https://bootcamp-carrefour-desafio-netflix-1tpc7a6an-raphangoulart.vercel.app/#
+>Link of my project: https://barbearia-alura-sigma.vercel.app/
 >
 >
 >In this project I used only HTML and CSS.
